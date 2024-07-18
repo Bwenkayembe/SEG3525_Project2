@@ -1,0 +1,205 @@
+body {
+    background-color: #d0d8e1; /* Light blue background color for the body */
+}
+
+.MainHome {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Home img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    border: 3px solid #5E99DD; /* Blue border for the image */
+}
+
+.Home {
+    flex-basis: 40%; /* Adjust this value as needed */
+}
+
+.Content {
+    flex-basis: 60%; /* Adjust this value as needed */
+    padding-right: 20px;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #5E99DD;
+}
+
+.font-libre {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 48px;
+    color: #F44A4A;
+}
+
+.paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #5E99DD;
+    margin-bottom: 20px;
+}
+
+.paragraph strong {
+    color: #F44A4A;
+    font-weight: bold;
+}
+
+.QuoteSection {
+    display: flex;
+    flex-direction: column; /* Stacks Quote and FunFactContainer vertically */
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.Quote, .FunFactContainer {
+    width: 100%; /* Ensures both sections take full width */
+}
+
+.Quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    border-color: #2D2081;
+}
+
+.testimonial {
+    color: #d5d0f6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: light;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #F44A4A;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2D2081;
+    margin-top: 20px;
+}
+
+.FunFactContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.FunFact {
+    width: 70%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.donate-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent; /* Make background transparent */
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #2D2081; /* Initial text color */
+    border: 5px solid #5E99DD; /* Initial border color */
+    padding: 20px 80px; /* Increased padding for a bigger button */
+    border-radius: 0px; /* Increased border radius for a more rounded look */
+    font-size: 20px; /* Increased font size */
+    cursor: pointer;
+    transition: color 0.25s ease; /* Smooth text color transition */
+    overflow: hidden;
+}
+
+.donate-button:hover {
+    color: #2D2081; /* Dark blue text color on hover */
+    animation: border-animation 1.5s ease forwards;
+}
+
+@keyframes border-animation {
+    0% {
+        border-top-color: #5E99DD;
+        border-right-color: #5E99DD;
+        border-bottom-color: #5E99DD;
+        border-left-color: #5E99DD;
+    }
+    15% {
+        border-top-color: #2D2081;
+        border-right-color: #5E99DD;
+        border-bottom-color: #5E99DD;
+        border-left-color: #5E99DD;
+    }
+    50% {
+        border-top-color: #2D2081;
+        border-right-color: #2D2081;
+        border-bottom-color: #5E99DD;
+        border-left-color: #5E99DD;
+    }
+    75% {
+        border-top-color: #2D2081;
+        border-right-color: #2D2081;
+        border-bottom-color: #2D2081;
+        border-left-color: #5E99DD;
+    }
+    100% {
+        border-top-color: #2D2081;
+        border-right-color: #2D2081;
+        border-bottom-color: #2D2081;
+        border-left-color: #2D2081;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .MainHome {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Home, .Content {
+        flex-basis: 100%;
+        padding-right: 0;
+    }
+
+    .font-poppins, .font-libre {
+        font-size: 36px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .FunFactContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FunFact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .donate-button {
+        margin-top: 20px;
+        padding: 15px 60px;
+        font-size: 18px;
+    }
+}

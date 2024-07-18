@@ -1,0 +1,127 @@
+.contact {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0px;
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: rgb(25, 4, 52);
+}
+
+.contact-col h3 {
+    color: #2D2081;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+.contact-col p {
+    color: #2D2081;
+    font-family: 'Poppins', sans-serif;
+    max-width: 450px;
+}
+
+.contact-col ul {
+    padding: 0;
+}
+
+.contact-col ul li {
+    color: #2D2081;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-col ul li img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.btn .arrow-icon {
+    width: 25px; /* Adjust the width to make the icon smaller */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some space between the text and the icon */
+    vertical-align: middle; /* Align the icon vertically in the middle */
+}
+
+.contact form input,
+.contact form textarea,
+.contact form label,
+.contact form button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact form input,
+.contact form textarea {
+    display: block;
+    width: 100%;
+    background: #adcbee;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color:#587392; /* Change this to your desired yellow color */
+    opacity: 1; /* Ensure the placeholder color is fully visible */
+}
+
+.contact-col span {
+    color:#2D2081;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: 20px 0;
+    margin-top: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-col ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact-col ul li {
+        justify-content: center;
+    }
+
+    .btn .arrow-icon {
+        width: 20px; /* Adjust the width for smaller screens */
+    }
+
+    .contact form input,
+    .contact form textarea {
+        padding: 10px;
+    }
+}

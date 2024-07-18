@@ -1,0 +1,97 @@
+nav {
+    font-family: 'Libre Baskerville', serif;
+    width: 100%;
+    color: #5E99DD;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+
+.logo {
+    width: 180px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li, nav ul .btn {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 20px;
+
+
+}
+
+
+nav ul .btn{
+    color: #D2E2F9;
+}
+
+
+.dark-nav {
+    background: #2D2081;
+    color: #5E99DD;
+    transition: background 0.65s;
+}
+
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 140px;
+    }
+    nav ul li {
+        margin: 10px 15px;
+    }
+}
+
+
+.menu_icon {
+    display: none;
+}
+
+
+@media (max-width: 840px) {
+    nav {
+        padding: 15px 0px;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        bottom: 0;
+        background: #2D2081;
+        z-index: 9;
+        width: 200px;
+        padding-top: 70px;
+        transition: right 0.5s;
+        flex-direction: column;
+    }
+    nav ul li, nav ul .btn {
+        display: block;
+        margin: 25px 40px;
+    }
+    .menu_icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .hide-mobile-menu {
+        right: -200px;
+    }
+    .show-mobile-menu {
+        right: 0;
+    }
+}
