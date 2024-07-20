@@ -31,6 +31,7 @@
     width: 100px;
     margin-right: 20px;
     margin-left: 120px;
+    margin-top: 90px;
   }
   
   .header-content-left h1 {
@@ -38,7 +39,7 @@
     font-size: 100px;
     font-weight: 650;
     color: #5E99DD;
-    margin: 0;
+    margin-top: 90px;
     text-transform: uppercase;
     background-clip: text;
   }
@@ -84,6 +85,37 @@
     padding: 20px;
     box-sizing: border-box;
   }
+
+  .explore-more-link-boycott {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #D6DFEE;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 25px;
+    background-color: #F44A4A;
+    border-radius: 30px;
+    transition: none;
+    margin-left: 140px;
+}
+
+.explore-more-link img {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.btnbtn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
   /*FOOTER INFORMATION*/
   .footer { /* Main footer styling */

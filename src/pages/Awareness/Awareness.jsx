@@ -3,7 +3,10 @@ import React from 'react';
 import './Awareness.css';
 import { Link } from 'react-scroll';
 import headerImage from '/images/StarLogo.png'; // Adjust the path as needed
-import AwarenessContent from './AwarenessContent';
+import ImageSlider from './ImageSlider';
+import CobaltDemandGraph from './CobaltDemandGraph'; // Import the graph component
+import ForeignInfluenceSlider from './ForeignInfluenceSlider'; // Import the foreign influence slider component
+import LocalsReality from './LocalsReality'; // Import the local reality slider component
 import logo from '/images/Group3.png'; // Adjust the path as needed
 
 const Awareness = () => {
@@ -21,11 +24,27 @@ const Awareness = () => {
           </Link>
         </button>
       </header>
-
       <main id="content-section">
-        <AwarenessContent />
+      <div className="preface">
+            <p>This section highlights the key issues in the Democratic Republic of Congo
+             (DRC): resource exploitation, harmful foreign influence, and harsh local 
+             conditions.Small-scale mining in the DRC involves people of all ages, 
+             including children. Of the 255,000 Congolese mining cobalt, 
+             40,000 are children, earning less than $2 per day. Rising global 
+             demand for these minerals raises significant human rights concerns. 
+             Big-tech companies like Apple, Google, Dell, Microsoft, and Tesla have faced 
+             lawsuits over child labor in DRC cobalt mines. Accountability efforts must be 
+             supported by public awareness of child exploitation and poor working conditions.
+             The DRC holds over 70% of the world's cobalt reserves, essential for rechargeable batteries. 
+             Growing demand has led to human rights abuses, including forced evictions from expanding cobalt and copper mines.
+             This page will reveal the realities of mining cobalt, copper, and tantalum in the DRC.
+            </p>
+        </div>
+        <ImageSlider />
+        <CobaltDemandGraph />
+        <ForeignInfluenceSlider />
+        <LocalsReality />
       </main>
-
       <footer className="footer">
       <div className='footer-content'>
         <div className='logo-section'>

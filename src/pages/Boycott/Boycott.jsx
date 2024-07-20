@@ -20,6 +20,11 @@ const Boycott = () => {
             Boycotting is a powerful way to effect change by refusing to support certain products or companies.
             Learn why it's important and how you can make a difference by making informed choices and supporting ethical practices.
           </p>
+          <button className="btnbtn">
+          <Link to="content-section" className="explore-more-link-boycott" smooth={true} offset={-70} duration={500}>
+            Learn More <img src="/images/arrow2use.png" alt="arrow" />
+          </Link>
+        </button>
         </div>
         <div className="header-content-right">
           <img src={xsymbol} alt="X Symbol" className="x-symbol" />

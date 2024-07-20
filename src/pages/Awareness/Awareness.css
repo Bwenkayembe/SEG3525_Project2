@@ -1,5 +1,15 @@
 /* src/pages/Awareness/Awareness.css */
 
+/*HEADER CONTENT*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .awareness-page {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
 .header-body-awareness {
     width: 100%;
     min-height: 100vh;
@@ -57,6 +67,22 @@
     padding: 20px;
     box-sizing: border-box;
   }
+  
+  /*MAIN CONTENT*/
+  .preface {
+    margin-top: 50px;
+    margin-left: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #5E99DD; /* Bright pink text color */
+    text-align: start;
+    width: 90%; /* Spread across the width of the website */
+    max-width: none; /* Remove the max-width constraint */
+    word-break: break-word; /* Break long words */
+    white-space: pre-wrap; /* Handle long paragraphs */
+  }
+  
+  /*FOOTER CONTENT*/
   .footer { /* Main footer styling */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     background-color: #2D2081; /* Dark blue background color */
@@ -64,41 +90,67 @@
     padding: 40px; /* Padding around the footer */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     max-width: 100%; /* Ensures the footer spans the full width */
-}
-
-
-.footer-content { /* Wrapper for the content sections within the footer */
+  }
+  
+  .footer-content { /* Wrapper for the content sections within the footer */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space between the items */
     align-items: flex-start; /* Align items to the start of the flex container */
     margin-bottom: 20px; /* Margin below the content */
-}
-
-
-.logo-section { /* Styling for the logo section */
+  }
+  
+  .logo-section { /* Styling for the logo section */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     flex: 1; /* Flexible box with equal growth/shrink */
-}
-
-
-.footer-logo { /* Styling for the logo image */
+  }
+  
+  .explore-more-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #D6DFEE;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 25px;
+    background-color: #F44A4A;
+    border-radius: 30px;
+    transition: none;
+  }
+  
+  .explore-more-link img {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .btnbtn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-logo { /* Styling for the logo image */
     width: 300px; /* Width of the logo image */
     margin-bottom: 10px; /* Margin below the logo */
-}
-
-
-.footer-bottom p, b{
+  }
+  
+  .footer-bottom p, b {
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
-}
-.tagline { /* Styling for the tagline text */
+  }
+  
+  .tagline { /* Styling for the tagline text */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     font-size: 12px; /* Font size */
     max-width: 200px; /* Maximum width of the tagline */
-}
-
-
-.stay-informed-section, .social-section { /* Styling for the stay informed and social sections */
+  }
+  
+  .stay-informed-section, .social-section { /* Styling for the stay informed and social sections */
     margin-top: 96px;
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     flex: 1; /* Flexible box with equal growth/shrink */
@@ -106,35 +158,31 @@
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Center align items vertically */
-}
-
-
-h3 { /* Styling for all h4 headers */
+  }
+  
+  h3 { /* Styling for all h4 headers */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     color: #5E99DD; /* Light blue text color */
     font-size: 30px; /* Increased font size */
     margin-bottom: 10px; /* Margin below the heading */
     text-transform: uppercase; /* Uppercase text */
-}
-
-
-.subscribe-form { /* Styling for the subscribe form */
+  }
+  
+  .subscribe-form { /* Styling for the subscribe form */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     display: flex; /* Flexbox layout */
     justify-content: center; /* Center align items */
-}
-
-
-.emailInput { /* Styling for the email input field */
+  }
+  
+  .emailInput { /* Styling for the email input field */
     color: #5E99DD; /* Neon green text color */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     padding: 5px; /* Padding inside the input */
     border: 3px solid #5E99DD; /* Thicker light blue border */
     background-color: transparent; /* Transparent background */
-}
-
-
-.submit-button { /* Styling for the submit button */
+  }
+  
+  .submit-button { /* Styling for the submit button */
     font-weight: bold; /* Bold font weight */
     font-family: 'Poppins', sans-serif; /* Poppins font for the button */
     margin-left: 10px; /* Margin to the left */
@@ -143,25 +191,22 @@ h3 { /* Styling for all h4 headers */
     color: #5E99DD; /* Light blue text color */
     border: 3px solid #5E99DD; /* Thicker light blue border */
     cursor: pointer; /* Pointer cursor on hover */
-}
-
-
-.social-icons { /* Styling for the social media icons container */
+  }
+  
+  .social-icons { /* Styling for the social media icons container */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     display: flex; /* Flexbox layout */
     justify-content: center; /* Center align items */
     gap: 10px; /* Space between the items */
-}
-
-
-.social-icons a { /* Styling for the social media icons */
+  }
+  
+  .social-icons a { /* Styling for the social media icons */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     color: #5E99DD; /* Light blue text color */
     font-size: 20px; /* Font size */
-}
-
-
-.footer-bottom { /* Styling for the bottom part of the footer */
+  }
+  
+  .footer-bottom { /* Styling for the bottom part of the footer */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     border-top: 1px solid #5E99DD; /* Light blue border on top */
     padding-top: 10px; /* Padding on top */
@@ -169,40 +214,38 @@ h3 { /* Styling for all h4 headers */
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space between the items */
     align-items: center; /* Center align items vertically */
-}
-
-
-.footer-links a { /* Styling for the footer links */
+  }
+  
+  .footer-links a { /* Styling for the footer links */
     font-family: 'Poppins', sans-serif; /* Poppins font for the footer */
     color: #5E99DD; /* Light blue text color */
     text-decoration: none; /* No text decoration */
     margin-left: 20px; /* Margin to the left */
     margin-right: 40px;
-}
-
-
-@media (max-width: 768px) { /* Media query for screens smaller than 768px */
+  }
+  
+  @media (max-width: 768px) { /* Media query for screens smaller than 768px */
     .footer-content { /* Adjust footer content layout for small screens */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align items */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items */
     }
-   
+  
     .logo-section, .stay-informed-section, .social-section { /* Adjust sections layout for small screens */
-        margin-bottom: 20px; /* Margin below each section */
-        text-align: center; /* Center align text */
+      margin-bottom: 20px; /* Margin below each section */
+      text-align: center; /* Center align text */
     }
-   
+  
     .footer-bottom { /* Adjust footer bottom layout for small screens */
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center align text */
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center align text */
     }
-   
+  
     .footer-links { /* Adjust footer links layout for small screens */
-        margin-top: 10px; /* Margin above the links */
+      margin-top: 10px; /* Margin above the links */
     }
-   
+  
     .footer-links a { /* Adjust footer links for small screens */
-        display: block; /* Display each link as a block */
-        margin: 5px 0; /* Margin above and below each link */
+      display: block; /* Display each link as a block */
+      margin: 5px 0; /* Margin above and below each link */
     }
-}
+  }

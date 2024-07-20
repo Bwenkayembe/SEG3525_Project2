@@ -1,0 +1,27 @@
+/* src/pages/Awareness/CobaltDemandGraph.css */
+.graph-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-source {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .graph-source a {
+    color: #5E99DD;
+    text-decoration: none;
+  }
+  
+  .graph-source a:hover {
+    text-decoration: underline;
+  }
+  

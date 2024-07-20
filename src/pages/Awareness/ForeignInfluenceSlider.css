@@ -1,0 +1,45 @@
+/* src/pages/Awareness/ImageSlider.css */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    margin-left: 40px;
+}
+
+.slider {
+    width: 50%;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+}
+
+.slide-content {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 20px;
+}
+
+.slide-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #5E99DD;
+}
+
+.slide-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.slide-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
