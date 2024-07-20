@@ -3,38 +3,45 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import './ImageSlider.css';
+import './ForeignInfluenceSlider.css';
 
 const slides = [
   {
-    image: '/images/AmericanArmy.png',
-    title: 'THE UNITED STATES OF AMERICA',
-    description: 'Description for foreign influence image 1.'
-  },
-  {
-    image: '/images/China.jpg',
-    title: 'THE REPUBLIC OF CHINA',
-    description: 'Description for foreign influence image 2.'
-  },
-  {
     image: '/images/BelgiumEvil.webp',
-    title: 'BELGIUM: THE COLONIAL POWER',
-    description: 'Description for foreign influence image 3.'
-  },
-  {
-    image: '/images/m23Evil.webp',
-    title: 'RWANDA: The M23 Rebels',
-    description: 'Description for foreign influence image 4.'
-  },
-  {
-    image: '/images/Uganda.jpg',
-    title: 'UGANDA',
-    description: 'Description for foreign influence image 5.'
+    title: 'BELGIUM: THE ROOT OF EVIL',
+    subtitle: 'Subtitle for foreign influence image 6',
+    description: 'Genuinely cannot beleive that Belgium was able to have so much hatred for Congolese poeple. I really despise the autrocities they have committed agaisnt the congolese. Nasty people.'
   },
   {
     image: '/images/CanadaEh.jpg',
     title: 'CANADA',
-    description: 'Description for foreign influence image 6.'
+    subtitle: 'Although not known to be a major player in the DRC, Canada has a history of mining in the country.',
+    description: 'Them folks wanna be seen as nice but whole time they are out there scheming and shit and causing disruption. Evil folks innit.'
+  },
+  {
+    image: '/images/AmericanArmy.jpg',
+    title: 'THE UNITED STATES OF AMERICA',
+    subtitle: 'The US has a long history of involvement in the DRC.',
+    description: "They've been involved in the DRC for a long time, and they've done some pretty bad things. They've supported dictators, and they've supported rebel groups. They've done a lot of bad things, and they need to be held accountable for it." 
+    },
+
+  {
+    image: '/images/China.jpg',
+    title: 'THE REPUBLIC OF CHINA',
+    subtitle: 'Known for its aggressive mining practices in the DRC.',
+    description: 'China is weird and they be doing weird shit to the congolese folks like buying their lands for mining and exploitative reasons and then telling the locals to leave and that is wrong. It is wrong because it is basically nust neo coloionalism, which we all know is evil, and bad. '
+  },
+  {
+    image: '/images/Uganda.jpg',
+    title: 'UGANDA',
+    subtitle: 'Uganda has been accused of supporting rebel groups in the DRC.',
+    description: "Uganda's basically like Rwanda's little brother, so they're mad annoying. I have some facts about them I just have to collect my papers."
+  },
+  {
+    image: '/images/m23Evil.webp',
+    title: 'M23 REBELS: BACKED BY RWANDA',
+    subtitle: 'Named after the March 23 Movement, the M23 rebel group is a major threat to the DRC.',
+    description: "They're genuinely bad people and don't even deserve mercy, just ugly and messy."
   }
 ];
 
@@ -53,15 +60,16 @@ const ForeignInfluenceSlider = () => {
   return (
     <div className="slider-container">
       <div className="slide-content">
-        <h2>Foreign Influence</h2>
+        <h2>FOREIGN INFLUENCE</h2>
         <h1>{slides[currentSlide].title}</h1>
+        <h3>{slides[currentSlide].subtitle}</h3>
         <p>{slides[currentSlide].description}</p>
       </div>
-      <div className="slider">
+      <div className="slider-foreign">
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index}>
-              <img src={slide.image} alt={slide.title} className="slide-image" />
+              <img src={slide.image} alt={slide.title} className="slide-image-foreign" />
             </div>
           ))}
         </Slider>

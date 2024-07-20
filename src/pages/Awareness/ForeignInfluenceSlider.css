@@ -1,19 +1,22 @@
-/* src/pages/Awareness/ImageSlider.css */
 .slider-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 60px;
-    margin-left: 40px;
-}
-
-.slider {
-    width: 50%;
-}
-
-.slide-image {
+    margin-right: 40px;
     width: 100%;
-    height: auto;
+}
+
+.slider-foreign {
+    width: 50%;
+    margin-right: 20px;
+
+}
+
+.slide-image-foreign {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: 500px; /* Set a fixed height for all images */
+    object-fit: cover; /* Cover ensures the image covers the container without distortion */
 }
 
 .slide-content {
@@ -21,25 +24,39 @@
     padding: 20px;
     box-sizing: border-box;
     margin: 0 20px;
-}
-
-.slide-content h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: #5E99DD;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .slide-content h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
+    font-weight: 700;
+    color: #5E99DD;
+    margin-bottom: 10px; /* Space between the section title and content */
+    margin-right: 200px;
+}
+
+.slide-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
+    color: #F44A4A;
+}
+
+.slide-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2D2081;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 .slide-content p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: #666;
+    color: #3a2b99;
+    margin-top: 20px;
 }

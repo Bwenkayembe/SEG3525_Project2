@@ -49,9 +49,9 @@ const ImageSlider = () => {
         </Slider>
       </div>
       <div className="slide-content">
-        <h1>MINERALS</h1>
-        <h2>{slides[currentSlide].title}</h2>
-        <h4>{slides[currentSlide].subtitle}</h4>
+        <h2>MINERALS</h2>
+        <h1>{slides[currentSlide].title}</h1>
+        <h3>{slides[currentSlide].subtitle}</h3>
         <p>{slides[currentSlide].description}</p>
       </div>
     </div>

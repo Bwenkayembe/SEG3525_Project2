@@ -3,10 +3,11 @@ import React from 'react';
 import './Awareness.css';
 import { Link } from 'react-scroll';
 import headerImage from '/images/StarLogo.png'; // Adjust the path as needed
+import AwarenessContent from './AwarenessContent';
 import ImageSlider from './ImageSlider';
-import CobaltDemandGraph from './CobaltDemandGraph'; // Import the graph component
-import ForeignInfluenceSlider from './ForeignInfluenceSlider'; // Import the foreign influence slider component
-import LocalsReality from './LocalsReality'; // Import the local reality slider component
+import CobaltDemandGraph from './CobaltDemandGraph';
+import ForeignInfluenceSlider from './ForeignInfluenceSlider';
+import LocalsReality from './LocalsReality';
 import logo from '/images/Group3.png'; // Adjust the path as needed
 
 const Awareness = () => {
@@ -24,8 +25,8 @@ const Awareness = () => {
           </Link>
         </button>
       </header>
-      <main id="content-section">
-      <div className="preface">
+      <main id="content-section" className="content-section">
+        <div className="preface">
             <p>This section highlights the key issues in the Democratic Republic of Congo
              (DRC): resource exploitation, harmful foreign influence, and harsh local 
              conditions.Small-scale mining in the DRC involves people of all ages, 
@@ -41,9 +42,10 @@ const Awareness = () => {
             </p>
         </div>
         <ImageSlider />
-        <CobaltDemandGraph />
         <ForeignInfluenceSlider />
         <LocalsReality />
+        <CobaltDemandGraph />
+        <AwarenessContent />
       </main>
       <footer className="footer">
       <div className='footer-content'>
