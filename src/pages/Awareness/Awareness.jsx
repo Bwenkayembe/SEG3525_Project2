@@ -9,7 +9,7 @@ import logo from '/images/Group3.png'; // Adjust the path as needed
 const Awareness = () => {
   return (
     <div className="awareness-page">
-      <header className="header-body">
+      <header className="header-body-awareness">
         <div className="header-content">
           <img src={headerImage} alt="Header Image" className="awareness-header-image" />
           <h1>AWARENESS</h1>

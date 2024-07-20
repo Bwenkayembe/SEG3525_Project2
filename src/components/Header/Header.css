@@ -5,7 +5,7 @@
                 url('/images/ImageForHome.png') no-repeat center center;
     background-size: cover;
     background-position: center;
-    color: #d5d0f6;
+    color: #D6DFEE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,8 +25,8 @@
 
 .header-text h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 80px;
+    font-weight: 650;
     margin: 0;
     background: linear-gradient(to right, #5E99DD, #F44A4A);
     background-clip: text;
@@ -34,10 +34,10 @@
 }
 
 .header-text p {
-    font-size: 15px;
+    font-size: 18px;
     margin: 10px auto 20px;
     line-height: 1.4;
-    background: #d5d0f6;
+    background: #D6DFEE;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -45,7 +45,7 @@
 .explore-more-link {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    color: #d5d0f6;
+    color: #D6DFEE;
     text-decoration: none;
     display: flex;
     align-items: center;
