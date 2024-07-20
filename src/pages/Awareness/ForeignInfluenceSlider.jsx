@@ -10,7 +10,7 @@ const slides = [
     image: '/images/BelgiumEvil.webp',
     title: 'BELGIUM: THE ROOT OF EVIL',
     subtitle: 'Subtitle for foreign influence image 6',
-    description: 'Genuinely cannot beleive that Belgium was able to have so much hatred for Congolese poeple. I really despise the autrocities they have committed agaisnt the congolese. Nasty people.'
+    description: 'Genuinely cannot believe that Belgium was able to have so much hatred for Congolese people. I really despise the atrocities they have committed against the Congolese. Nasty people.'
   },
   {
     image: '/images/CanadaEh.jpg',
@@ -24,12 +24,11 @@ const slides = [
     subtitle: 'The US has a long history of involvement in the DRC.',
     description: "They've been involved in the DRC for a long time, and they've done some pretty bad things. They've supported dictators, and they've supported rebel groups. They've done a lot of bad things, and they need to be held accountable for it." 
     },
-
   {
     image: '/images/China.jpg',
     title: 'THE REPUBLIC OF CHINA',
     subtitle: 'Known for its aggressive mining practices in the DRC.',
-    description: 'China is weird and they be doing weird shit to the congolese folks like buying their lands for mining and exploitative reasons and then telling the locals to leave and that is wrong. It is wrong because it is basically nust neo coloionalism, which we all know is evil, and bad. '
+    description: 'China is weird and they be doing weird stuff to the Congolese folks like buying their lands for mining and exploitative reasons and then telling the locals to leave and that is wrong. It is wrong because it is basically neo-colonialism, which we all know is evil and bad.'
   },
   {
     image: '/images/Uganda.jpg',
@@ -58,8 +57,8 @@ const ForeignInfluenceSlider = () => {
   };
 
   return (
-    <div className="slider-container">
-      <div className="slide-content">
+    <div className="slider-container foreign-influence-background">
+      <div className="slide-content-foreign">
         <h2>FOREIGN INFLUENCE</h2>
         <h1>{slides[currentSlide].title}</h1>
         <h3>{slides[currentSlide].subtitle}</h3>
