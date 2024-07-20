@@ -14,7 +14,7 @@ const Awareness = () => {
           <img src={headerImage} alt="Header Image" className="awareness-header-image" />
           <h1>AWARENESS</h1>
         </div>
-        <p>Join us in raising awareness about the exploitation in Congo.</p>
+        <p>Why it's important to understand. Dive in deeper to get a better grasp of things.</p>
         <button className="btnbtn">
           <Link to="content-section" className="explore-more-link" smooth={true} offset={-70} duration={500}>
             Learn More <img src="/images/arrow2use.png" alt="arrow" />
