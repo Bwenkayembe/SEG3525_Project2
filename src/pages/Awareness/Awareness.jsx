@@ -1,33 +1,62 @@
+// src/pages/Awareness/Awareness.jsx
 import React from 'react';
 import './Awareness.css';
+import { Link } from 'react-scroll';
+import headerImage from '/images/StarLogo.png'; // Adjust the path as needed
+import AwarenessContent from './AwarenessContent';
+import logo from '/images/Group3.png'; // Adjust the path as needed
 
 const Awareness = () => {
   return (
     <div className="awareness-page">
+      <header className="header-body">
+        <div className="header-content">
+          <img src={headerImage} alt="Header Image" className="awareness-header-image" />
+          <h1>AWARENESS</h1>
+        </div>
+        <p>Join us in raising awareness about the exploitation in Congo.</p>
+        <button className="btnbtn">
+          <Link to="content-section" className="explore-more-link" smooth={true} offset={-70} duration={500}>
+            Learn More <img src="/images/arrow2use.png" alt="arrow" />
+          </Link>
+        </button>
+      </header>
 
-      <section className="awareness-section">
-        <h1>AWARNESS</h1>
-        <p>Why it's important to understand</p>
-      </section>
+      <main id="content-section">
+        <AwarenessContent />
+      </main>
 
-      <section className="info-section">
-        <div className="info-box">
-          <h2>MINERALS</h2>
-          <p>Cobalt</p>
+      <footer className="footer">
+      <div className='footer-content'>
+        <div className='logo-section'>
+          <img src={logo} alt="ABC Logo" className='footer-logo' />
+          <p className='tagline'>There's no liberation without community: Stand with the country that powers the world</p>
         </div>
-        <div className="info-box">
-          <h2>STATISTIQUE</h2>
-          <img src="/path-to-statistique-image.png" alt="Statistique" />
+        <div className='stay-informed-section'>
+          <h3>STAY INFORMED!</h3>
+          <form className='subscribe-form'>
+            <input type='email' placeholder='Enter your email'  className='emailInput' required/>
+            <button type='submit' className='submit-button'> SUBMIT</button>
+          </form>
         </div>
-        <div className="info-box">
-          <h2>FOREIGN INFLUENCE</h2>
-          <p>Insert Country Name</p>
+        <div className='social-section'>
+          <h3>FOLLOW US</h3>
+          <div className='social-icons'>
+            <a href="#"><i className="bi bi-tiktok"></i></a>
+            <a href="#"><i className="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-threads"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+          </div>
         </div>
-        <div className="info-box">
-          <h2>LOCALS</h2>
-          <p>Their reality</p>
+      </div>
+      <div className='footer-bottom'>
+        <p>© 2024 Awareness and Boycott for Congo. Ontario, Canada. All rights reserved</p>
+        <div className='footer-links'>
+          <a href="#"><b>PRIVACY POLICY</b></a>
+          <a href="#"><b>TERMS AND CONDITIONS</b></a>
         </div>
-      </section>
+      </div>
+      </footer>
     </div>
   );
 };

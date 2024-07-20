@@ -1,24 +1,29 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import './index.css'; // Ensure this import if using index.css for global styles
+import './index.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Title from './components/Title/Title';
-import ContactUs from './components/ContactUs/contact'; // Correct the import path
+import ContactUs from './components/ContactUs/contact';
 import Footer from './components/Footer/Footer';
 import Awareness from './pages/Awareness/Awareness';
 import Boycott from './pages/Boycott/Boycott';
 import Donations from './pages/Donations/Donations';
 import More from './pages/More/More';
-import Action from './pages/Action/Action'; // Ensure you import Action component
+import Action from './pages/Action/Action';
 
 const App = () => {
+  const location = useLocation();
+
+  // Check if the current path is the home page
+  const isHomePage = location.pathname === "/";
+
   return (
-    <Router>
+    <div>
       <Navbar />
-      <Header />
+      {isHomePage && <Header />}
       <Routes>
         <Route exact path="/" element={
           <div className="container">
@@ -33,8 +38,8 @@ const App = () => {
         <Route path="/more" element={<More />} />
         <Route path="/action" element={<Action />} />
       </Routes>
-      <Footer />
-    </Router>
+      {isHomePage && <Footer />}
+    </div>
   );
 }
 
