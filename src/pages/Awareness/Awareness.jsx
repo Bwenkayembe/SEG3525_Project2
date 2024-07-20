@@ -3,7 +3,6 @@ import React from 'react';
 import './Awareness.css';
 import { Link } from 'react-scroll';
 import headerImage from '/images/StarLogo.png'; // Adjust the path as needed
-import AwarenessContent from './AwarenessContent';
 import ImageSlider from './ImageSlider';
 import CobaltDemandGraph from './CobaltDemandGraph';
 import ForeignInfluenceSlider from './ForeignInfluenceSlider';
@@ -42,10 +41,9 @@ const Awareness = () => {
             </p>
         </div>
         <ImageSlider />
+        <CobaltDemandGraph />
         <ForeignInfluenceSlider />
         <LocalsReality />
-        <CobaltDemandGraph />
-        <AwarenessContent />
       </main>
       <footer className="footer">
       <div className='footer-content'>
