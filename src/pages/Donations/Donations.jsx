@@ -3,6 +3,7 @@ import headerImage from '/images/StarLogo.png'; // Adjust the path as needed
 import { Link } from 'react-scroll';
 import './Donations.css';
 import logo from '/images/Group3.png'; // Adjust the path as needed
+import DonationsContent from './DonationsContent';
 
 const Donations = () => {
   return (
@@ -21,6 +22,11 @@ const Donations = () => {
           </div>
         </div>
       </header>
+
+      <main id="content-section">
+        <DonationsContent />
+      </main>
+
       <footer className="footer">
       <div className='footer-content'>
         <div className='logo-section'>
