@@ -9,19 +9,39 @@ const slides = [
     image: '/images/CobaltMining.jpg',
     title: 'COBALT',
     subtitle: 'Cobalt Mining in the DRC',
-    description: 'This is the description for image 1.'
+    description: `Cobalt is a hard, lustrous, gray metal used mainly in batteries, alloys, and catalysts.
+    Cobalt is essential for the production of lithium-ion batteries, 
+    which are used in electric vehicles, smartphones, and laptops. 
+    It is also used in superalloys that are resistant to high temperatures and corrosion, 
+    making it critical for aerospace and industrial applications. The DRC produces approximately 70% of 
+    the world's cobalt, with annual production around 100,000 metric tons.​`
   },
   {
     image: '/images/coppermining.webp',
     title: 'COPPER',
     subtitle: 'Copper Mining in the DRC',
-    description: 'This is the description for image 2.'
+    description: `Copper is a red-brown metal known for its high conductivity, malleability, and resistance to corrosion.
+    Copper is crucial for electrical wiring, plumbing, and as a component in various electronic devices. 
+    It is also essential in renewable energy technologies, such as wind turbines and solar panels, 
+    due to its excellent electrical conductivity.
+    Copper is mined through both open-pit and underground mining methods. 
+    The mining process involves extracting the ore, crushing it, and then processing 
+    it to extract copper. The ethical implications of copper mining vary; while some operations 
+    adhere to strict environmental and labor standards, others have been criticized for causing 
+    significant environmental damage and poor working conditions​ ​.
+    The Democratic Republic of the Congo (DRC) is one of the world's largest producers of copper.
+     In 2021, the DRC produced around 1.88 million metric tons of copper​ `
   },
   {
     image: '/images/diamondMining.jpeg',
     title: 'DIAMOND',
     subtitle: 'Diamond Mining in the DRC',
-    description: 'Diamonds are forever, but the lives of the miners are not. Diamonds are extremely controversial due to the human rights abuses that occur in the mining process. Most dimaonds that are cultivated raw, are at the hands of blood. (insert random staitistcs here). With that being said, it is muhc more beneficial t aim to get lab grown diamonds, as they are more ethical and sustainable. (Insert company that grows lab grown dimaonds.'
+    description: `Diamonds are precious gemstones known for their hardness and brilliance, 
+    formed under high-pressure, high-temperature conditions in the Earth's mantle. 
+    Diamonds are mined through both alluvial mining, where they are extracted from riverbeds and ocean floors, and through 
+    kimberlite pipe mining, which involves deep excavation. The ethical implications of diamond mining are significant; 
+    conflict diamonds, also known as blood diamonds, are mined in war zones and sold to finance armed conflict against 
+    governments. The DRC is one of the world's largest producers of diamonds, producing around 12 million carats annually​.​ `
   }
 ];
 
