@@ -1,8 +1,16 @@
+// Home.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import Secondhomepage from '/images/2ndhomepageimage.webp';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleDonateClick = () => {
+    navigate('/donations');
+  };
+
   return (
     <>
       <div className="MainHome">
@@ -48,7 +56,7 @@ const Home = () => {
               reduce the demand for child labor and promote ethical mining practices.
             </p>
           </div>
-          <button className="donate-button">DONATE</button>
+          <button className="donate-button" onClick={handleDonateClick}>DONATE</button>
         </div>
       </div>
     </>
