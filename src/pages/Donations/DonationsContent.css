@@ -1,143 +1,188 @@
 .donations-content-container {
-    text-align: center;
-  }
-  
-  .donations-divider {
-    background-color: #F44A4A;
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-    height: auto;
+  text-align: center;
+}
 
-  }	
-  .donations-description {
-    font-family: 'Poppins', sans-serif;
-    font-size: 46px; /* Increased font size */
-    color: #2D2081; /* Dark blue text color */
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 40px;
-  }
-  
-  .donations-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 400px; /* Increased gap between buttons */
-  }
-  
-  .donation-option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .donation-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    color: #2D2081;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  
-  .donation-button {
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #D6DFEE;
-    background-color: #5E99DD;
-    border: none;
-    padding: 20px 30px;
-    border-radius: 90px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .donation-button a {
-    color: #D6DFEE;
-    text-decoration: none;
-  }
-  
-  .donation-button:hover {
-    background-color: #F44A4A;
-  }
-  
-  .section {
-    margin-top: 60px;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .section h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    color: #2D2081;
-    margin-left: 30px;
-    border-bottom: 2px solid #2D2081; /* Adds an underline */
-    padding-bottom: 5px; /* Adds some space between the text and the underline */
+.donations-divider {
+  background-color: #F44A4A;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  height: auto;
+}	
+
+.donationscontent-donate-button{
+  color:#D6DFEE;
+}
+.donations-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px; /* Increased font size */
+  color: #2D2081; /* Dark blue text color */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 40px;
+}
+
+.donations-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 400px; /* Increased gap between buttons */
+}
+
+.donation-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donation-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #2D2081;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.donation-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #D6DFEE;
+  background-color: #5E99DD;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donation-button a {
+  color: #D6DFEE;
+  text-decoration: none;
+}
+
+.donation-button:hover {
+  background-color: #F44A4A;
+}
+
+.section {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: left;
+}
+
+.section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #2D2081;
+  margin-left: 30px;
+  border-bottom: 2px solid #2D2081; /* Adds an underline */
+  padding-bottom: 5px; /* Adds some space between the text and the underline */
   display: inline-block; /* Allows the width to be set */
   width: 20%; /* Set the width as needed, e.g., 50% of the text width */
+}
 
-  }
-  
-  .section p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px; /* Increased margin for more space between cards */
-  }
-  
-  .card-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-content {
-    padding: 10px;
-    margin-left: 90px;
-    margin-right: 90px;
+.section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #333;
+}
 
-  }
-  
-  .card-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    color: #2D2081;
-    margin-top: 10px;
-  }
-  
-  .card-description {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #333;
-    margin-top: 5px;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .donations-buttons {
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Increased margin for more space between cards */
+  height: 450px; /* Increased height to accommodate button */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px; /* Fixed height for images */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #2D2081;
+  margin-top: 10px;
+}
+
+.card-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+.donationscontent-donate-button a{
+  font-family: 'Poppins', sans-serif;
+  color: #480031;
+
+}
+
+
+.donationscontent-donate-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #2D2081; /* Light blue color */
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50px; /* Makes the button round */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Adds space between the description and the button */
+}
+
+.donationscontent-donate-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.donationscontent-donate-button:hover {
+  background-color: #5E99DD; /* Slightly darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .donations-buttons {
       flex-direction: column;
       gap: 20px; /* Adjusted gap for smaller screens */
-    }
-  
-    .donations-description {
-      font-size: 20px; /* Adjust font size for smaller screens */
-    }
-  
-    .card-image {
-      height: 150px; /* Adjust image height for smaller screens */
-    }
   }
-  
+
+  .donations-description {
+      font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .card-image {
+      height: 150px; /* Adjust image height for smaller screens */
+  }
+
+  .card-content {
+      margin-left: 0;
+      margin-right: 0;
+  }
+}
