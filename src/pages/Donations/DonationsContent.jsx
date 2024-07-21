@@ -5,13 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const organizations = [
-  { name: 'Organization 1', description: '', image: '/images/organization1.png' },
-  { name: 'Organization 2', description: 'Description 2', image: '/images/organization2.png' },
-  { name: 'Organization 3', description: 'Description 3', image: '/images/organization3.png' },
-  { name: 'Organization 4', description: 'Description 4', image: '/images/organization4.png' },
-  { name: 'Organization 5', description: 'Description 5', image: '/images/organization5.png' },
-  { name: 'Organization 6', description: 'Description 6', image: '/images/organization6.png' },
-  { name: 'Organization 7', description: 'Description 7', image: '/images/organization7.png' }
+  { name: 'Focus Congo', description: 'Empowers Congolese communities with education, healthcare, and economic opportunities.', image: '/images/FocusCongo.jpg', link: 'https://www.focuscongo.com/en/' },
+  { name: 'Friends Of The Congo', description: 'Advocates for peace and justice in the Congo through global awareness and local empowerment.', image: '/images/FriendsOfTheCongo.jpg', link: 'https://friendsofthecongo.org/' },
+  { name: 'Congolicious Foundation', description: 'Supports Congolese women and children with education and vocational training.', image: '/images/CongoliciousFoundation.png', link: 'https://www.congoliciousfoundation.org/' },
 ];
 
 const families = [
@@ -85,6 +81,9 @@ const DonationsContent = () => {
                 <div className="card-content">
                   <h3 className="card-title">{organization.name}</h3>
                   <p className="card-description">{organization.description}</p>
+                  <a href={organization.link} target="_blank" rel="noopener noreferrer">
+                    <button className="donationscontent-donate-button">Donate</button>
+                  </a>
                 </div>
               </div>
             ))}
