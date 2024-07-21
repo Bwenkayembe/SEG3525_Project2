@@ -6,54 +6,63 @@ const companies = [
     name: 'Company 1',
     category: 'tech',
     image: '/images/company1.png',
+    alt: 'Flag of Country 1',
     description: 'Description of how Company 1 is involved.'
   },
   {
     name: 'Company 2',
     category: 'car',
     image: '/images/company2.png',
+    alt: 'Flag of Country 1',
     description: 'Description of how Company 2 is involved.'
   },
   {
     name: 'Company 3',
     category: 'jewelery',
     image: '/images/company3.png',
+    alt: 'Flag of Country 1',
     description: 'Description of how Company 3 is involved.'
   },
   {
     name: 'Country 1',
     category: 'country',
     image: '/images/country1.png',
+    alt: 'Flag of Country 1',
     description: 'Description of how Country 1 is involved.'
   },
   {
-    name: 'Country 1',
-    category: 'country',
-    image: '/images/country1.png',
-    description: 'Description of how Country 1 is involved.'
-  },
-  {
-    name: 'Country 1',
-    category: 'car',
-    image: '/images/country1.png',
-    description: 'Description of how Country 1 is involved.'
-  },
-  {
-    name: 'Country 1',
+    name: 'company 2',
     category: 'tech',
     image: '/images/country1.png',
+    alt: 'Flag of Country 1',
     description: 'Description of how Country 1 is involved.'
   },
   {
-    name: 'Country 1',
+    name: 'company 3',
+    category: 'tech',
+    image: '/images/country1.png',
+    alt: 'Flag of Country 1',
+    description: 'Description of how Country 1 is involved.'
+  },
+  {
+    name: 'company 4',
+    category: 'tech',
+    image: '/images/country1.png',
+    alt: 'Flag of Country 1',
+    description: 'Description of how Country 1 is involved.'
+  },
+  {
+    name: 'jewelry 2',
     category: 'jewelery',
     image: '/images/country1.png',
+    alt: 'Flag of Country 1',
     description: 'Description of how Country 1 is involved.'
   },
   {
-    name: 'Company 1',
+    name: 'Company 5',
     category: 'tech',
     image: '/images/country1.png',
+    alt: 'Flag of Country 1',
     description: 'Description of how Country 1 is involved.'
   }
 
