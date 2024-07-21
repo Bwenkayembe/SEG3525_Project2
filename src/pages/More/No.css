@@ -1,0 +1,18 @@
+.no-page {
+  padding: 20px;
+  color: #fff;
+  text-align: left; /* Align text to the left */
+}
+
+.no-page h1 {
+  font-size: 64px; /* Increase font size */
+  color: #5E99DD; /* Light blue color */
+  margin-bottom: 10px;
+}
+
+.no-page p {
+  font-family: 'Poppins', sans-serif; /* Font style */
+  font-size: 20px; /* Smaller font size */
+  color: #2D2081; /* Lighter blue color */
+  margin-bottom: 20px;
+}
