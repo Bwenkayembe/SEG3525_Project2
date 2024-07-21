@@ -33,6 +33,7 @@ const ContactUs = () => {
       setResult(data.message);
     }
   };
+
   return (
     <div className="contact">
       <div className="contact-col">

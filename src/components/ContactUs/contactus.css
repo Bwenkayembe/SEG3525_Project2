@@ -53,13 +53,6 @@
     margin-right: 10px;
 }
 
-.btn .arrow-icon {
-    width: 25px; /* Adjust the width to make the icon smaller */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 10px; /* Add some space between the text and the icon */
-    vertical-align: middle; /* Align the icon vertically in the middle */
-}
-
 .contact form input,
 .contact form textarea,
 .contact form label,
@@ -82,8 +75,8 @@
 
 .contact form input::placeholder,
 .contact form textarea::placeholder {
-    color:#587392; /* Change this to your desired yellow color */
-    opacity: 1; /* Ensure the placeholder color is fully visible */
+    color:#587392;
+    opacity: 1;
 }
 
 .contact-col span {
@@ -92,6 +85,17 @@
     display: block;
     margin: 20px 0;
     margin-top: 5px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn .arrow-icon {
+    width: 25px;
+    height: auto;
+    margin-left: 10px;
 }
 
 /* Media Queries for Responsive Design */
@@ -117,7 +121,7 @@
     }
 
     .btn .arrow-icon {
-        width: 20px; /* Adjust the width for smaller screens */
+        width: 20px;
     }
 
     .contact form input,
