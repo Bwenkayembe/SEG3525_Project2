@@ -15,7 +15,7 @@
     background-color: rgba(214, 223, 238, 0.8); /* Semi-transparent white background */
     padding: 40px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left; /* Align text to the left */
     max-width: 800px;
     width: 100%;
 }
@@ -25,6 +25,7 @@
     font-size: 48px;
     color: #5E99DD;
     margin-bottom: 20px;
+    text-align: center; /* Center the title */
 }
 
 .how-description {

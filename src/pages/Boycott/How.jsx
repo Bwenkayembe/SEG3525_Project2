@@ -8,7 +8,15 @@ const How = () => {
       <div className="how-text-container">
         <h1 className="how-title">HOW TO BOYCOTT</h1>
         <p className="how-description">
-          Boycotting can be a powerful way to effect change by refusing to support certain products or companies. Here's how you can boycott effectively: identify the companies or products you wish to boycott, spread the word about your boycott and the reasons behind it, find and support alternative products or companies, and stay informed about the issue and adjust your actions as necessary.
+        To effectively boycott and make a meaningful impact,
+         individuals should educate themselves about the DRC's issues, 
+         including human rights abuses and environmental impacts of mineral mining. 
+         Avoid products from companies sourcing minerals unethically, and opt for alternatives 
+         like refurbished or second-hand electronics. Support companies committed to ethical 
+         sourcing and join advocacy campaigns for corporate accountability and better regulations.
+          Reducing consumer demand for products linked to unethical mining practices can pressure 
+          companies to improve working conditions, protect the environment, and reduce conflict-driven 
+          violence in eastern Congo where most mines are located.
         </p>
       </div>
     </div>
