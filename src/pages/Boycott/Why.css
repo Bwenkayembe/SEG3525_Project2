@@ -1,0 +1,59 @@
+.MainHome-boycott {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping to ensure responsiveness */
+}
+
+.Content-boycott {
+    flex-basis: 55%; /* Adjust as needed */
+    padding-right: 20px;
+}
+
+.Home-boycott {
+    flex-basis: 40%; /* Adjust as needed */
+    flex-shrink: 0; /* Prevent the image from shrinking too much */
+    display: flex;
+    justify-content: center;
+}
+
+.Home-boycott img {
+    width: 100%;
+    max-width: 900px; /* Adjust max-width as needed */
+    border-radius: 10px;
+    border: 3px solid #5E99DD; /* Blue border for the image */
+}
+
+.font-poppins-boycott {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #5E99DD;
+    margin-bottom: 20px;
+}
+
+.paragraph-boycott {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #5E99DD;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .MainHome-boycott {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+        text-align: center; /* Center align text on small screens */
+    }
+
+    .Home-boycott, .Content-boycott {
+        flex-basis: 100%; /* Full width on small screens */
+    }
+
+    .Home-boycott img {
+        max-width: 80%; /* Adjust image size on small screens */
+        margin-bottom: 20px; /* Add margin to separate the image from the text */
+    }
+}

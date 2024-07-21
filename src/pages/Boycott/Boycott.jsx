@@ -4,8 +4,9 @@ import './Boycott.css';
 import { Link } from 'react-scroll';
 import headerImage from '/images/StarLogo.png'; // Adjust the path as needed
 import xsymbol from '/images/xsymbol.png'; // Adjust the path as needed
-import BoycottContent from './BoycottContent';
 import logo from '/images/Group3.png'; // Adjust the path as needed
+import Why from './Why';
+import How from './How';
 
 const Boycott = () => {
   return (
@@ -32,7 +33,8 @@ const Boycott = () => {
       </header>
 
       <main id="content-section">
-        <BoycottContent />
+        <Why />
+        <How />
       </main>
 
       <footer className="footer">
