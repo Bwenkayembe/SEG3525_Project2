@@ -7,6 +7,7 @@ import xsymbol from '/images/xsymbol.png'; // Adjust the path as needed
 import logo from '/images/Group3.png'; // Adjust the path as needed
 import Why from './Why';
 import How from './How';
+import What from './What';
 
 const Boycott = () => {
   return (
@@ -35,6 +36,7 @@ const Boycott = () => {
       <main id="content-section">
         <Why />
         <How />
+        <What />
       </main>
 
       <footer className="footer">
