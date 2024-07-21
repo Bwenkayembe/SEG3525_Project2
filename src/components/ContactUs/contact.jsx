@@ -25,7 +25,7 @@ const ContactUs = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Email Submitted Successfully!");
+      setResult("Message Submitted Successfully!");
       event.target.reset();
       
     } else {
