@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IntlProvider } from 'react-intl';
 import EnglishMessages from './Languages/en.json';
 import FrenchMessages from './Languages/fr.json';
+import './LanguageProvider.css'; // Import the new CSS file
 
 export const LanguageContext = React.createContext();
 

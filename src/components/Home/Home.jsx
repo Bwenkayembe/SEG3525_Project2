@@ -46,6 +46,7 @@ const Home = () => {
         </div>
       </div>
       <ChatBox /> {/* Add the ChatBox component here */}
+
     </>
   );
 }

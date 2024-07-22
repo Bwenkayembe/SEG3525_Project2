@@ -1,0 +1,26 @@
+/* LanguageProvider.css */
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .language-switcher button {
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #F44A4A; /* Blue background */
+    color: #D6DFEE; /* Light text color */
+    border: none;
+    border-radius: 90px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .language-switcher button:hover {
+    background-color: #2D2081; /* Dark blue background on hover */
+    color: #FFFFFF; /* White text color on hover */
+  }
+  

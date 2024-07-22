@@ -32,8 +32,10 @@ const Navbar = () => {
         <li><Link to="/action"><button className='btn'><FormattedMessage id="navbar.action" /></button></Link></li>
       </ul>
       <img src={menu_icon} alt='menu icon sandwich' className='menu_icon' onClick={toggleMenu} />
-      <button onClick={() => switchLanguage('en')}>English</button>
-      <button onClick={() => switchLanguage('fr')}>Français</button>
+      <div className="language-switcher">
+        <button onClick={() => switchLanguage('en')}>English</button>
+        <button onClick={() => switchLanguage('fr')}>Français</button>
+      </div>
     </nav>
   );
 };
