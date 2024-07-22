@@ -49,21 +49,22 @@
 
 .articles, .books, .videos {
   display: flex;
-  flex-direction: column; /* Arrange items vertically */
-  align-items: center; /* Center items */
+  flex-wrap: wrap; /* Allow items to wrap to next row */
+  justify-content: center; /* Center items */
 }
 
 .card {
   background-color: #fff;
   color: #2D2081;
   padding: 20px;
-  margin: 10px 0;
+  margin: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.2s;
-  width: 80%; /* Adjust width as needed */
+  width: calc(25% - 40px); /* Adjust width to fit 4 cards per row, accounting for margins */
   text-align: center; /* Center text in cards */
+  box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .card:hover {
