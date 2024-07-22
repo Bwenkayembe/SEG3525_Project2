@@ -31,14 +31,7 @@ const Home = () => {
       <div className="QuoteSection">
         <div className="Quote">
           <p className="testimonial">
-            “I am still a child. This job doesn't deserve me. 
-            I'd like us all to be able to study and put an end 
-            to these mining stories,” 
-            “I regret the time I spent in the mines. 
-            I missed out on a lot of subjects.<br/> Because my 
-            friends were going to school, and I was working.
-            Those who were at the same level as me when I started mining, 
-            completely passed me by.<br/> That's what I regret.”
+            <FormattedMessage id = "home.testimonial"/>
           </p>
           <p className="author">- FAUSTIN, 11</p>
         </div>
@@ -49,14 +42,10 @@ const Home = () => {
               <FormattedMessage id="home.funFact" />
             </p>
           </div>
-          <button className="donate-button" onClick={handleDonateClick}>DONATE</button>
+          <button className="donate-button" onClick={handleDonateClick}><FormattedMessage id="home.donate"/></button>
         </div>
       </div>
       <ChatBox /> {/* Add the ChatBox component here */}
-      <div className="language-switcher">
-        <button onClick={() => switchLanguage('en')}>English</button>
-        <button onClick={() => switchLanguage('fr')}>Français</button>
-      </div>
     </>
   );
 }
