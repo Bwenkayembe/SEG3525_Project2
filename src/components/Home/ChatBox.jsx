@@ -11,7 +11,8 @@ const ChatBox = () => {
     Hello: "Hello, my name is Chatty, the chat chat.",
     Student: "This website was coded by Bwen Kayembe Entus, an excellent student who strives to achieve greatness in life.",
     Congo: "This is a website to spread awareness about the current ongoing situation happening in the Democratic Republic of the Congo.",
-    Tell_Me_a_Joke: "Knock, knock. Who's there? Congo. Congo who? Congo and tell me a joke!"
+    Tell_Me_a_Joke: "Knock, knock. Who's there? Congo. Congo who? Congo and tell me a joke!",
+    Skibbidi: "Skibbidi wap pap pap, skibbidi wap pap pap toilet!"
   };
 
   const handleMessageSubmit = (e) => {
