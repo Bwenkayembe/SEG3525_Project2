@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import './contactus.css';
 import talk_icon from '/images/TalkToMe.png';
 import phone_icon from '/images/phoneIcon.png';
@@ -37,26 +38,25 @@ const ContactUs = () => {
   return (
     <div className="contact">
       <div className="contact-col">
-        <h3>Send us a message <img src={talk_icon} alt="communication icon"/></h3>
-        <p>
-          Feel free to reach out through the contact form or find our contact information below. Your feedback, questions, and suggestions are important
-          to us as we strive to provide exceptional service to our community members.
-        </p>
+        <h3><FormattedMessage id="contact.title" /> <img src={talk_icon} alt="communication icon" /></h3>
+        <p><FormattedMessage id="contact.paragraph" /></p>
         <ul>
-          <li><img src={msg_icon} alt="communication icon"/>Awareness@BoycottForCongo.com</li>
-          <li><img src={phone_icon} alt="call icon"/>613-400-6000</li>
-          <li><img src={WYA_icon} alt="location icon"/>Headquarters located in Ottawa</li>
+          <li><img src={msg_icon} alt="communication icon" /><FormattedMessage id="contact.email" /></li>
+          <li><img src={phone_icon} alt="call icon" /><FormattedMessage id="contact.phone" /></li>
+          <li><img src={WYA_icon} alt="location icon" /><FormattedMessage id="contact.address" /></li>
         </ul>
       </div>
       <div className="contact-col">
         <form onSubmit={onSubmit}>
-          <label>Your name</label>
-          <input type="text" name="name" placeholder="Enter your name" required/>
-          <label>Phone Number</label>
-          <input type="tel" name="phone" placeholder="Enter your phone or mobile number" required/>
-          <label>Write your message here</label>
+          <label><FormattedMessage id="contact.form.name" /></label>
+          <input type="text" name="name" placeholder="Enter your name" required />
+          <label><FormattedMessage id="contact.form.phone" /></label>
+          <input type="tel" name="phone" placeholder="Enter your phone or mobile number" required />
+          <label><FormattedMessage id="contact.form.message" /></label>
           <textarea name="message" rows="6" placeholder="Enter your message here" required></textarea>
-          <button type="submit" className="btn dark-btn">Submit Now <img src={arrow_icon} alt="light blue arrow" className="arrow-icon"/></button>
+          <button type="submit" className="btn dark-btn">
+            <FormattedMessage id="contact.form.submit" /> <img src={arrow_icon} alt="light blue arrow" className="arrow-icon" />
+          </button>
         </form>
         <span>{result}</span>
       </div>

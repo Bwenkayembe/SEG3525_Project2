@@ -6,7 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Title from './components/Title/Title';
-import ContactUs from './components/ContactUs/contact';
+import ContactUs from './components/ContactUs/ContactUs';
 import Footer from './components/Footer/Footer';
 import Awareness from './pages/Awareness/Awareness';
 import Boycott from './pages/Boycott/Boycott';
