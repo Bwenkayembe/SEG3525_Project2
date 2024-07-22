@@ -1,12 +1,18 @@
 import React, { useContext } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { LanguageContext } from '../LanguageProvider';
+import { useNavigate } from 'react-router-dom'; // Ensure useNavigate is imported
 import './Home.css';
 import Secondhomepage from '/images/2ndhomepageimage.webp';
 import ChatBox from './ChatBox'; // Import the ChatBox component
 
 const Home = () => {
   const { switchLanguage } = useContext(LanguageContext);
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleDonateClick = () => {
+    navigate('/donations'); // Navigate to donations page
+  };
 
   return (
     <>
@@ -47,8 +53,10 @@ const Home = () => {
         </div>
       </div>
       <ChatBox /> {/* Add the ChatBox component here */}
-      <button onClick={() => switchLanguage('en')}>English</button>
-      <button onClick={() => switchLanguage('fr')}>Français</button>
+      <div className="language-switcher">
+        <button onClick={() => switchLanguage('en')}>English</button>
+        <button onClick={() => switchLanguage('fr')}>Français</button>
+      </div>
     </>
   );
 }
