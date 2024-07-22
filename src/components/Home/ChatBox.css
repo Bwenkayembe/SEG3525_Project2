@@ -1,0 +1,83 @@
+/* ChatBox.css */
+.chat-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chat-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.chat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.chat-content {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  padding: 10px;
+}
+
+.chat-message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.chat-message.user {
+  background-color: #5E99DD;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.chat-message.bot {
+  background-color: #D6DFEE;
+  color: #000;
+  align-self: flex-start;
+}
+
+.chat-form {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 0 0 0 5px;
+}
+
+.chat-form button {
+  background-color: #5E99DD;
+  color: #D6DFEE;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0 0 5px 0;
+}
+
+.chat-form button:hover {
+  background-color: #2D2081;
+}

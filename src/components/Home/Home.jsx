@@ -1,8 +1,8 @@
-// Home.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import Secondhomepage from '/images/2ndhomepageimage.webp';
+import ChatBox from './ChatBox'; // Import the ChatBox component
 
 const Home = () => {
   const navigate = useNavigate();
@@ -59,6 +59,7 @@ const Home = () => {
           <button className="donate-button" onClick={handleDonateClick}>DONATE</button>
         </div>
       </div>
+      <ChatBox /> {/* Add the ChatBox component here */}
     </>
   );
 }
